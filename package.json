@@ -5,6 +5,9 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
+    "docker-build": "docker build . -t kikstart/graphql-intercom:latest",
+    "docker-push": "docker push kikstart/graphql-intercom:latest",
+    "docker-run": "docker run -p 4567:4567 -it kikstart/graphql-intercom:latest",
     "server": "ts-node --watch src src/intercom-server.ts",
     "lint": "eslint './src/**/*.{js,ts,tsx}'",
     "test": "true # jest",
