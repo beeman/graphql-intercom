@@ -1,7 +1,7 @@
 {
   "name": "graphql-intercom",
   "version": "0.0.0-development",
-  "description": "Small NodeJS Wrapper around apollo-client that provides easy access to running queries, mutations and subscriptions.",
+  "description": "Small GraphQL server that serves as an intercom allowing to publish messages and subscribe to them.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
