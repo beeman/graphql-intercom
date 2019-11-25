@@ -1,6 +1,6 @@
 # graphql-intercom
 
-Small GraphQL server that serves as an intercom allowing to publish messages and subscribe to them. 
+☎️  Small GraphQL server that serves as an intercom allowing to publish messages and subscribe to them. 
 
 
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/beeman/graphql-intercom.svg)
