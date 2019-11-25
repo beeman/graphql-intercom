@@ -1,0 +1,69 @@
+{
+  "name": "graphql-intercom",
+  "version": "0.0.0-development",
+  "description": "Small NodeJS Wrapper around apollo-client that provides easy access to running queries, mutations and subscriptions.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "server": "ts-node --watch src src/intercom-server.ts",
+    "lint": "eslint './src/**/*.{js,ts,tsx}'",
+    "test": "true # jest",
+    "test:watch": "jest --watchAll",
+    "build": "tsc",
+    "watch": "tsc -w",
+    "start": "npm link && nodemon",
+    "semantic-release": "semantic-release"
+  },
+  "bin": {
+    "graphql-intercom": "./dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/beeman/graphql-intercom.git"
+  },
+  "keywords": [
+    "Hello",
+    "Greeter"
+  ],
+  "author": {
+    "name": "Bram Borggreve",
+    "email": "borggreve@gmail.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beeman/graphql-intercom/issues"
+  },
+  "homepage": "https://github.com/beeman/graphql-intercom#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && npm test",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-push": "npm run lint && npm test"
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
+    "@types/jest": "^24.0.23",
+    "@types/node": "^12.12.11",
+    "@typescript-eslint/eslint-plugin": "^2.8.0",
+    "@typescript-eslint/parser": "^2.8.0",
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "graphql": "^14.5.8",
+    "husky": "^3.1.0",
+    "jest": "^24.9.0",
+    "nodemon": "^1.19.4",
+    "prettier": "^1.19.1",
+    "semantic-release": "^15.13.31",
+    "ts-jest": "^24.1.0",
+    "typescript": "^3.7.2"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "dependencies": {
+    "graphql-yoga": "^1.18.3"
+  }
+}
