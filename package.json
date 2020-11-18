@@ -59,7 +59,7 @@
     "jest": "^24.9.0",
     "nodemon": "^1.19.4",
     "prettier": "^1.19.1",
-    "semantic-release": "^15.13.31",
+    "semantic-release": "^17.2.3",
     "ts-jest": "^24.1.0",
     "typescript": "^3.7.2"
   },
